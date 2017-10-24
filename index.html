@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title> <!-- shows up on the tab name in the browser-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Bootstrap and CSS here-->
+
+
+  </head>
+  <body>
+
+      <div class='container center' id='app'>
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1 id='topheader'>Play The Guessing Game!</h1>
+          <h3 id = 'subheader'>Guess a number between 1&ndash;100</h3>
+
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id='player-input' placeholder="#" maxlength="3" autofocus=autofocus ></input>
+            <button class="btn btn-success" id='submit'>Guess!</button>
+          </div>
+
+          <div id='guesses'>
+
+            <ul id='guessList'>
+              <li class='guess' id='guess1'>&ndash;</li>
+              <li class='guess' id='guess2'>&ndash;</li>
+              <li class='guess' id='guess3'>&ndash;</li>
+              <li class='guess' id='guess4'>&ndash;</li>
+              <li class='guess' id='guess5'>&ndash;</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button class="btn btn-warning" id='btn-reset'>Reset</button>
+            <button class="btn btn-info" id='btn-hint'>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-md-4 credits'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-md-4 credits'>
+            <h4>Project by Jon Schwartz</h4>
+          </div>
+
+          <div class='col-md-4 credits' id='gracehopper'>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="GuessingGame.js"></script>
+  </body>
+</html>
+
+
+<!-- //flexbox -->
